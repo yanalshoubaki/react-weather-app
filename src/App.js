@@ -10,7 +10,7 @@ function App() {
     return iconUrl;
   };
   const getWeather = () => {
-    var api = "05df32b7225eae59ec512dd0dbc5c60f";
+    var api = `API_KEY_HERE`;
     axios({
       method: "GET",
       url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`,
