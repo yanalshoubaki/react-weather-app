@@ -10,7 +10,7 @@ function App() {
     return iconUrl;
   };
   const getWeather = () => {
-    var api = `API_KEY_HERE`;
+    var api = `05df32b7225eae59ec512dd0dbc5c60f`;
     axios({
       method: "GET",
       url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`,
@@ -66,57 +66,7 @@ function App() {
           </ul>
         </div>
       </section>
-      <p class="container text-center col-8">
-        جميع البيانات تم الحصول عليها من :{" "}
-        <a href="https://openweathermap.org/">Open Weather</a>
-        <br />
-        <a
-          class="github-button"
-          href="https://github.com/yanalshoubaki/covid-19/fork"
-          data-color-scheme="no-preference: dark; light: dark; dark: light;"
-          data-icon="octicon-repo-forked"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Fork yanalshoubaki/covid-19 on GitHub"
-        >
-          Fork
-        </a>
-      </p>
-      <footer>
-        <div class="container">
-          <div class="social_media">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/yanalshoubakidev/">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/Yanal_sh9">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/yanalshoubaki">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/yanalshoubaki">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="copyright">
-            تطوير{" "}
-            <a href="https://www.facebook.com/yanalshoubakidev/">
-              ينال الشوبكي
-            </a>{" "}
-          </div>
-        </div>
-      </footer>
-    </div>
+     </div>
   );
 }
 
